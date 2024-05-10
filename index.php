@@ -45,7 +45,7 @@
 <body>
     <div class="row m-5">
         <div class="col output">
-            <div style="display: flex; justify-content: center; align-items: center; overflow: auto; padding: <?=@$_POST['p'].'px'?>; width: <?=@$_POST['w'].'px'?>; height: <?=@$_POST['h'].'px'?>; background-color: <?=@$_POST['bgc']?>; color: <?=@$_POST['c']?>; border-radius: <?=@$_POST['b'].'px'?>;"><?=@$_POST['y']?></div>   
+            <div style="display: flex; justify-content: center; align-items: center; overflow: auto; padding: <?=@$_POST['p'].'px'?>; width: <?=@$_POST['w'].'px'?>; height: <?=@$_POST['h'].'px'?>; background-color: <?=@$_POST['bgc']?>; color: <?=@$_POST['c']?>; border-radius: <?=@$_POST['b'].'px'?>; box-shadow: 0px 0px <?=@$_POST['sg'].'px'?> <?=@$_POST['sc']?>;"><?=@$_POST['y']?></div>   
         </div>
         <div class="col">
             <div class="form-container">
@@ -53,6 +53,8 @@
                     <textarea class="form-control" name="y" id="" cols="30" rows="10" placeholder="Metni giriniz..."></textarea>
                     Arka Plan Rengi <input type="color" class="form-control" name="bgc" value="#ffffff">
                     Yazı Rengi <input type="color" class="form-control" name="c" value="#000000">
+                    Gölge Rengi <input type="color" class="form-control" name="sc" value="#000000">
+                    Gölge Genişlik (px) <input type="number" class="form-control" name="sg" value="10" placeholder="Gölge Genişlik">
                     Genişlik (px) <input type="number" class="form-control" name="w" value="200" placeholder="Genişlik">
                     Yükseklik (px) <input type="number" class="form-control" name="h" value="100" placeholder="Yükseklik">
                     İç Boşluk (px) <input type="number" class="form-control" name="p" value="10" placeholder="İç Boşluk">
